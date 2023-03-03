@@ -10,11 +10,10 @@ import MaxArt from "../../img/MaxArt.png";
 import MiniBankist from "../../img/miniBankist.png";
 import PigGame from "../../img/pigGame.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Navigation, Scrollbar } from "swiper";
 import "swiper/css";
-
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 
@@ -30,11 +29,16 @@ const Projects = () => {
       <span>Projects</span>
 
       {/* slider */}
-      {/* <div className="swiper-wrap"> */}
+
       <Swiper
+        modules={[Navigation, Scrollbar]}
+        scrollbar={{ draggable: "true" }}
+        pagination={{ clickable: "true" }}
+        navigation
         spaceBetween={30}
         slidesPerView={3}
-        grabCursor={true}
+        grabCursor={"true"}
+        loop={"true"}
         className="projects-slider"
       >
         <SwiperSlide>
@@ -43,17 +47,17 @@ const Projects = () => {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/Forkify-app">
+          <a href="https://forkify2023.netlify.app">
             <img src={Forkify} alt="forkify" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/PIG-GAME-">
+          <a href="https://piggame100.netlify.app">
             <img src={PigGame} alt="pigGame" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/Bankist">
+          <a href="https://bankist2022.netlify.app">
             <img src={Bankist} alt="bankist" />
           </a>
         </SwiperSlide>
@@ -63,27 +67,26 @@ const Projects = () => {
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/Map-ty">
+          <a href="https://mapty2022.netlify.app">
             <img src={Mapty} alt="mapty" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/My-Art-Website">
+          <a href="https://maxart.netlify.app">
             <img src={MaxArt} alt="maxArt" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/chefMax-Website">
+          <a href="https://chefmax.netlify.app">
             <img src={ChefMax} alt="chefmax" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="https://github.com/NwekeMaxwell/Heaven-Church-Website">
+          <a href="https://heavenschurch.netlify.app">
             <img src={Church} alt="church" />
           </a>
         </SwiperSlide>
       </Swiper>
-      {/* </div> */}
     </div>
   );
 };

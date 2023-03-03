@@ -22,8 +22,7 @@ const Skills = () => {
         </span>
         <span>Skills</span>
         <span>
-          ReactJS, JavaScript, SASS, CSS3, HTML5, Yarn, NPM, Parcel, jQuery
-          BABEL, BootStrap, TailWind.
+          ReactJS, JavaScript, SASS, CSS3, HTML5, jQuery, BootStrap, TailWind.
           <br />
           GIT & GitHub, Jira , Figma, Adobe, PhotoShop.
         </span>
@@ -55,7 +54,7 @@ const Skills = () => {
         <Card
           emoji={Glasses}
           heading={"Developer"}
-          detail={"HTML, CSS, JavaScript, React, NPM"}
+          detail={"HTML5, CSS3, SASS, JavaScript, React"}
         />
       </motion.div>
 
