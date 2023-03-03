@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -5rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8rem;
+  gap: 2rem;
+  color: var(--secondary-dark);
+}
+
+.footer img {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 40vh;
+  }
+  .footer img {
+    height: 45vh;
+  }
+  .f-content {
+    margin-top: 3rem;
+    transform: scale(0.6);
+    gap: 0.5rem;
+  }
+  .f-content > :nth-child(2),
+  .f-content > :nth-child(3) {
+    text-align: center;
+  }
+  .f-content > :nth-child(2) {
+    font-size: 0.8rem;
+  }
+}

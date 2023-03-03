@@ -1,0 +1,76 @@
+.skills {
+  display: flex;
+  height: 90vh;
+  padding: 0 3rem 0 3rem;
+  margin: 9rem 0 13rem 0;
+  position: relative;
+}
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.awesome > :nth-child(1) {
+  color: var(--secondary-dark);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(2) {
+  color: var(--primary-light);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.awesome > :nth-child(3) {
+  color: var(--secondary-medium);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.cards {
+  position: relative;
+}
+.card-1 {
+  left: 14rem;
+}
+.card-2 {
+  left: -4rem;
+  top: 12rem;
+}
+.card-3 {
+  left: 12rem;
+  top: 19rem;
+}
+
+.s-blur-1 {
+  background-color: var(--tertiary-medium);
+  height: 22rem;
+  width: 14rem;
+  top: 10rem;
+  left: 50rem;
+}
+.s-blur-2 {
+  background: var(--secondary-light);
+  height: 11rem;
+  width: 21rem;
+  top: 10rem;
+  left: -7rem;
+}
+@media screen and (max-width: 480px) {
+  .skills {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-bottom: 13rem;
+  }
+}

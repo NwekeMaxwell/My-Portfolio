@@ -1,0 +1,82 @@
+.t-wrapper {
+  height: 100vh;
+  padding: 0rem 3rem 0rem 3rem;
+  margin-top: 3rem; /*7rem */
+  gap: 2rem;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.t-heading {
+  align-self: center;
+}
+.t-heading > * {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.t-heading span:nth-of-type(2) {
+  color: var(--primary-light);
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 12rem;
+  width: 30rem;
+  padding: 2rem;
+
+  background: var(--tertiary-dark);
+  border: 7px solid var(--secondary-light);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+}
+.testimonials > img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+.testimonials > span {
+  color: var(--primary-light);
+  text-align: center;
+}
+/* slider */
+.t-wrapper .swiper {
+  height: 70%;
+  width: 100%;
+}
+.t-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-wrapper .swiper-pagination-bullet-active {
+  background: var(--primary-light);
+}
+/* blur */
+.t-blur-2 {
+  background: var(--secondary-light);
+  height: 11rem;
+  width: 21rem;
+  top: 9rem;
+  left: 0rem;
+}
+.t-blur-1 {
+  background: var(--tertiary-medium);
+  height: 11rem;
+  width: 21rem;
+  top: 16rem;
+  left: 38rem;
+}
+@media screen and (max-width: 480px) {
+  .t-wrapper {
+    padding: 0;
+  }
+  .testimonials > img {
+    width: 70px;
+    height: 70px;
+  }
+}

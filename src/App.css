@@ -1,0 +1,47 @@
+:root {
+  --primary-light: #f5c32c;
+  --primary-medium: #fca61f;
+  --secondary-light: #ddf8fe;
+  --secondary-medium: #788097;
+  --secondary-dark: #242d49;
+  --tertiary-light: #fff;
+  --tertiary-medium: rgb(255, 210, 244);
+  --tertiary-basic: #ebebeb;
+  --tertiary-dark: rgba(255, 255, 255, 0.26);
+  --basic: #5290fd;
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --primary-dark: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--secondary-dark);
+  /* background-color: #7e5757; */
+}
+.button {
+  border-radius: 34px;
+  border: none;
+  color: var(--tertiary-light);
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(
+    180deg,
+    var(--primary-light) 26.71%,
+    var(--primary-medium) 99.36%
+  );
+  box-shadow: 0px 20px 24px 3px var(--primary-dark);
+}
+.button:hover {
+  background: var(--tertiary-light);
+  cursor: pointer;
+  color: var(--primary-light);
+  border: 1px solid var(--primary-light);
+  transform: scale(1.02);
+}
+@media screen and (max-width: 480px) {
+  .App {
+    padding: 0.5rem 1rem;
+  }
+}

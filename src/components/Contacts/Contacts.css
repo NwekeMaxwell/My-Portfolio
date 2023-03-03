@@ -1,0 +1,78 @@
+.contact-form {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+.c-right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+.c-right > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.c-right .user {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3rem;
+  outline: none;
+  border: 2px solid var(--primary-light);
+  border-radius: 8px;
+  font-size: 16px;
+}
+textarea {
+  height: 4rem !important;
+}
+/* blur */
+.c-blur-1 {
+  background-color: var(--tertiary-medium);
+  height: 11rem;
+  width: 21rem;
+  top: 1rem;
+  left: 10rem;
+}
+/* icons */
+.f-icons {
+  display: flex;
+  margin-left: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.f-icons > * {
+  color: var(--primary-light);
+  width: 2rem;
+  margin-top: 4rem;
+  transform: scale(3);
+}
+.f-icons > *:hover {
+  color: var(--basic);
+  transform: scale(3.1);
+  transition: all 0.2s;
+}
+@media screen and (max-width: 480px) {
+  .contact-form {
+    padding: 0;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .c-right .user {
+    width: 25rem;
+    height: 2.5rem;
+  }
+  .c-right {
+    margin-top: -3rem;
+    transform: scale(0.5);
+  }
+  .f-icons {
+    margin-left: 0.7rem;
+  }
+  .f-icons > * {
+    transform: scale(2.5);
+  }
+}
