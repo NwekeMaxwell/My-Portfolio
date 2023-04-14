@@ -1,17 +1,18 @@
 @keyframes animateUser {
   50% {
-    transform: scale(0.93);
+    transform: scale(0.97);
   }
 }
 .intro {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 .i-left {
   display: flex;
   position: relative;
-  flex: 1;
+  width: 50vw;
+
   flex-direction: column;
   gap: 2rem;
 }
@@ -35,6 +36,12 @@
   color: var(--secondary-medium);
   margin-top: 10px;
 }
+.i-name > :nth-child(4) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--secondary-medium);
+  margin-top: 10px;
+}
 .i-button {
   width: 7rem;
   height: 2rem;
@@ -53,17 +60,11 @@
   transition: all 0.2s;
 }
 .i-right {
-  flex: 1;
+  width: 50vw;
   position: relative;
 }
 .i-right > * {
   position: absolute;
-  /* z-index: 1; */
-}
-.i-right > :nth-child(1) {
-  transform: scale(0.69);
-  left: -15%;
-  top: -9%;
 }
 .i-right > :nth-child(2) {
   transform: scale(0.67);
@@ -72,26 +73,19 @@
 }
 .i-right > :nth-child(3) {
   transform: scale(0.9);
-  top: -98%;
   left: -30%;
+  animation: animateUser 5s linear infinite;
+}
+.i-avatar {
+  background: linear-gradient(var(--basic), transparent);
+  border-radius: 12rem 12rem 0 0;
+  width: 40vw;
+  display: grid;
+}
+.i-avatar img {
   animation: animateUser 4s linear infinite;
+  margin: auto;
 }
-.i-right > :nth-child(4) {
-  transform: scale(0.6);
-  top: -19%;
-  left: -24%;
-  border-radius: 50%;
-  padding: 0;
-}
-.i-floatingDiv1 {
-  top: -4%;
-  left: 68%;
-}
-.i-floatingDiv2 {
-  top: 18rem;
-  left: 0;
-}
-
 .blur {
   position: absolute;
   border-radius: 50%;
@@ -115,37 +109,39 @@
 @media screen and (max-width: 480px) {
   .intro {
     flex-direction: column;
-    height: 64rem;
-    gap: 7rem;
+    height: 65rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
   }
   .i-left {
+    width: 100%;
     margin-top: -2rem;
   }
   .i-right {
-    transform: scale(0.6);
-    left: -5rem;
-    margin-top: -6rem;
-  }
-
-  .i-right > :nth-child(3) {
-    top: -25rem;
-    left: -9rem;
-  }
-
-  .i-floatingDiv1 {
-    left: 15rem !important;
-    top: 5rem !important;
-    right: -13rem !important;
-  }
-  .i-floatingDiv2 {
-    left: 5.5rem !important;
-    right: -7rem;
+    width: 100%;
   }
   .i-icons {
-    margin-top: 2rem;
+    margin-top: -1rem;
     justify-content: space-around;
   }
-
+  .i-right * {
+    transform: scale(0.9);
+  }
+  .i-avatar {
+    width: 100%;
+  }
+  .i-floatingDiv1 {
+    display: none;
+  }
+  .i-floatingDiv2 {
+    left: 25% !important;
+    top: 22rem !important;
+  }
+  .floating-emoji {
+    transform: scale(0.5) !important;
+    left: -15% !important;
+    top: -7% !important;
+  }
   .i-button {
     align-self: center;
   }
