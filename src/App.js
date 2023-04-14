@@ -1,15 +1,10 @@
-import "./App.css";
-import Intro from "./components//Intro/Intro";
-import Contacts from "./components/Contacts/Contacts";
-import Experience from "./components/Experience/Experience";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Works from "./components/Works/Works";
+import { Route, Routes } from "react-router-dom";
 import { themeContext } from "./Context";
 import { useContext } from "react";
+import Footer from "./components/Footer/Footer";
+import FullProjectPage from "./Pages/FullProjectPage/FullProjectPage";
+import HomePage from "./Pages/HomePage.jsx";
+import "./App.css";
 
 function App() {
   const theme = useContext(themeContext);
@@ -22,17 +17,18 @@ function App() {
         color: darkMode ? "var(--tertiary-light)" : "",
       }}
     >
-      <Navbar />
-      <Intro />
-      <Skills />
-      <Experience />
-      <Works />
-      <Projects />
-      <Testimonials />
-      <Contacts />
+      <Routes>
+        <Route path="/" Component={HomePage} />
+        <Route path="/projects" Component={FullProjectPage} />
+      </Routes>
       <Footer />
+      <a href="#" className="moveToTop">
+        &uarr;
+      </a>
     </div>
   );
+}
+{
 }
 
 export default App;
