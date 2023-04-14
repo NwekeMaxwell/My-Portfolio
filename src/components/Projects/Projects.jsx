@@ -2,11 +2,8 @@ import React from "react";
 import "./Projects.css";
 import Portfolio from "../../img/portfolio.png";
 import Bankist from "../../img/bankist.png";
-import ChefMax from "../../img/chefMax.png";
-import Church from "../../img/church.png";
 import Forkify from "../../img/forkify.png";
 import Mapty from "../../img/mapty.png";
-import MaxArt from "../../img/MaxArt.png";
 import MiniBankist from "../../img/miniBankist.png";
 import PigGame from "../../img/pigGame.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,6 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const theme = useContext(themeContext);
@@ -27,9 +25,7 @@ const Projects = () => {
         My Outstanding
       </span>
       <span>Projects</span>
-
       {/* slider */}
-
       <Swiper
         modules={[Navigation, Scrollbar]}
         scrollbar={{ draggable: "true" }}
@@ -38,7 +34,7 @@ const Projects = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={"true"}
-        loop={"true"}
+        // loop={"false"}
         className="projects-slider"
       >
         <SwiperSlide>
@@ -71,24 +67,15 @@ const Projects = () => {
             <img src={Mapty} alt="mapty" />
           </a>
         </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://maxart.netlify.app">
-            <img src={MaxArt} alt="maxArt" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://chefmax.netlify.app">
-            <img src={ChefMax} alt="chefmax" />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://heavenschurch.netlify.app">
-            <img src={Church} alt="church" />
-          </a>
-        </SwiperSlide>
       </Swiper>
+      <div className="viewAllBtn">
+        <Link to="/projects">View All Projects &rarr;</Link>
+      </div>
     </div>
   );
 };
+// <div>
+//   <Slider largeimg={Forkify} smallImg={Mapty} />
+// </div>
 
 export default Projects;

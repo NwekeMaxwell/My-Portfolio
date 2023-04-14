@@ -17,6 +17,26 @@
   font-size: 2.5rem;
   font-weight: bold;
 }
+.viewAllBtn {
+  margin-top: 5vh;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: var(--boxShadow);
+  border: 1px solid var(--primary-light);
+  transition: all 0.1s;
+}
+.viewAllBtn * {
+  color: var(--secondary-dark);
+  text-decoration: none;
+}
+.viewAllBtn:hover {
+  transform: scaleX(1.03);
+}
+.viewAllBtn:active {
+  transform: scaleX(1);
+}
 /* slider */
 
 .projects-slider {
