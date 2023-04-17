@@ -1,48 +1,26 @@
 .skills {
   display: flex;
+  flex-direction: column;
   height: 90vh;
   padding: 0 3rem 0 3rem;
-  margin: 9rem 0 13rem 0;
+  margin: 9rem 0 5rem 0;
   position: relative;
 }
-.awesome {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.awesome > :nth-child(1) {
-  color: var(--secondary-dark);
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.awesome > :nth-child(2) {
+h1 {
   color: var(--primary-light);
   font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
 }
-.awesome > :nth-child(3) {
-  color: var(--secondary-medium);
-  font-size: 14px;
-  margin-top: 1rem;
+.s-container {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  gap: 5vw;
 }
 .s-button {
   width: 8rem;
   height: 2rem;
   margin-top: 1rem;
-}
-.cards {
-  position: relative;
-}
-.card-1 {
-  left: 14rem;
-}
-.card-2 {
-  left: -4rem;
-  top: 12rem;
-}
-.card-3 {
-  left: 12rem;
-  top: 19rem;
 }
 
 .s-blur-1 {
@@ -59,18 +37,18 @@
   top: 10rem;
   left: -7rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .skills {
-    margin-top: -4rem;
-    flex-direction: column;
+    margin-top: -5rem;
+    margin: -6rem 0 0 0;
     gap: 5rem;
-    height: 66rem;
+    height: 90vh;
     padding: 0;
   }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    margin-bottom: 13rem;
+  .s-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 5vw;
+    margin-top: -5rem;
   }
 }
