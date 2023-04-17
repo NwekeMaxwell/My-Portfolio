@@ -16,7 +16,7 @@
   font-size: 16px;
   color: var(--secondary-dark);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .floatingDiv {
     padding: 0px 20px 0px 0px;
     height: 4rem;

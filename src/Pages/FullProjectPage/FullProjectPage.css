@@ -49,7 +49,7 @@
   transition: all 0.1s;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .prevBtn {
     width: 60vw;
     margin-bottom: 2rem;

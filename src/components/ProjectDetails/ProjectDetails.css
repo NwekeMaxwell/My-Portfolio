@@ -42,10 +42,30 @@
   border-top: 1px solid var(--secondary-medium);
   border-bottom: 1px solid var(--secondary-medium);
 }
-@media screen and (max-width: 480px) {
+.p-button {
+  border-radius: 20px;
+  margin-top: 2rem;
+  border: none;
+  color: var(--tertiary-light);
+  font-size: 10px;
+  padding: 7px 16px 7px 16px;
+  background: linear-gradient(
+    180deg,
+    var(--primary-light) 26.71%,
+    var(--primary-medium) 99.36%
+  );
+  box-shadow: 0px 20px 24px 3px var(--primary-dark);
+}
+.p-button:hover {
+  background: var(--tertiary-light);
+  cursor: pointer;
+  color: var(--primary-light);
+  border: 1px solid var(--primary-light);
+  transform: scale(1.02);
+}
+@media screen and (max-width: 780px) {
   .projectDetails {
     flex-direction: column;
-    height: auto;
     width: 100%;
   }
   .imgContainer {

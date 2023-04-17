@@ -28,10 +28,10 @@ const ProjectDetails = () => {
               <span>Stack: {stack.toString()} </span>
               <div>Focus: {projectFocus.toString()} </div>
               <div>
-                <a href={github} className="button">
+                <a href={github} className="p-button">
                   view Code
                 </a>
-                <a href={link} className="button">
+                <a href={link} className="p-button">
                   Live Demo
                 </a>
               </div>

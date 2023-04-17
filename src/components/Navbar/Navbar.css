@@ -30,7 +30,6 @@
   gap: 2rem;
   margin-right: 4rem;
   list-style: none;
-  /* cursor: pointer; */
 }
 .n-list > ul > *:hover {
   cursor: pointer;
@@ -39,7 +38,7 @@
 .n-button {
   flex: 2;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   .n-left {
     gap: 5rem;
   }
