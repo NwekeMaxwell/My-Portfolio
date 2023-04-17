@@ -19,8 +19,8 @@ const MyProjectsData = [
     link: "https://nweke-maxwell-lendsqr-fe-test.netlify.app",
     github: "https://github.com/NwekeMaxwell/lendsqr-fe-test",
     description:
-      "A static finance 4 page website accessing and showing over 500 user details from external Library / API.",
-    stack: ["TypeScript", "React"],
+      "A finance 4 page website accessing and showing over 500 user details from external Library / API.",
+    stack: ["TypeScript", "React", "SCSS"],
     projectFocus: ["Typescript", "SCSS", "ReactJS"],
   },
   {
@@ -41,7 +41,7 @@ const MyProjectsData = [
     github: "https://github.com/NwekeMaxwell/Forkify-app",
     description:
       "A model food website where you search for recipes and get a list of different food, directions to cook, and ingredients to prepare it.",
-    stack: ["JavaScript"],
+    stack: ["JavaScript", "SCSS"],
     projectFocus: [
       "Asynchronous javaScript",
       "Promises",
@@ -118,7 +118,7 @@ const MyProjectsData = [
     link: "https://maxart.netlify.app",
     github: "https://github.com/NwekeMaxwell/My-Art-Website",
     description: "A model art exhibition website for artists",
-    stack: ["HTML/CSS"],
+    stack: ["HTML/CSS", "SCSS"],
     projectFocus: ["SCSS", "CSS GRID", "Responsive WebPage"],
   },
   {
@@ -128,7 +128,7 @@ const MyProjectsData = [
     link: "https://chefmax.netlify.app",
     github: "https://github.com/NwekeMaxwell/ChefMax-Website",
     description: "A model restaurant webpage for advert and sales",
-    stack: ["HTML/CSS"],
+    stack: ["HTML/CSS", "SCSS"],
     projectFocus: ["FlexBox", "SCSS", "Responsive WebPage"],
   },
   {
@@ -139,7 +139,7 @@ const MyProjectsData = [
     github: "https://github.com/NwekeMaxwell/Heaven-Church-Website",
     description:
       "A model church website which offers users opportunity to request for prayers and book for prayer sections",
-    stack: ["HTML/CSS"],
+    stack: ["HTML/CSS", "SCSS"],
     projectFocus: ["CSS Animations", "Responsive Web Page"],
   },
   {
