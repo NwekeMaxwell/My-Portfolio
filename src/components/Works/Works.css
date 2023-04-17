@@ -1,8 +1,11 @@
 .works {
-  padding: 0 3rem 0 3rem;
+  /* padding: 0 3rem 0 3rem; */
   display: flex;
   height: 90vh;
   margin-top: 4rem;
+}
+.w-left {
+  flex: 1;
 }
 .w-blur {
   background: var(--secondary-light);
@@ -13,6 +16,8 @@
 }
 /* right side */
 .w-right {
+  flex: 1;
+
   position: relative;
 }
 .w-mainCircle {

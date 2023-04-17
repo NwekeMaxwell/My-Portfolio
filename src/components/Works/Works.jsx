@@ -5,31 +5,30 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Github from "@iconscout/react-unicons/icons/uil-github";
-import Reddit from "@iconscout/react-unicons/icons/uil-reddit-alien-alt";
+import Reddit from "@iconscout/react-unicons/icons/uil-java-script";
 import ReactIcon from "@iconscout/react-unicons/icons/uil-react";
-import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
-import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
+import HTML5 from "@iconscout/react-unicons/icons/uil-html5";
+import CSS3 from "@iconscout/react-unicons/icons/uil-css3-simple";
 
 const Works = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
       {/* left side */}
-      <div className="awesome">
+      <div className="i-name w-left">
         <span style={{ color: darkMode ? "var(--tertiary-light)" : "" }}>
-          Works with All these
+          About Me
         </span>
-        <span>Tools & Socials</span>
+        <span>and my Tools</span>
 
         <span>
-          Enthusiastic to deliver before expected time frame
-          <br />
-          24hrs available and in touch
-          <br />
-          Disciplined and an active learner
-          <br />
-          Effective communicator -ENGLISH
+          ~ I am Enthusiastic towards delivering before expected time frame,
+          24hrs available and in touch, Disciplined and an active learner,
+          Effective communicator -ENGLISH.
+          <br /> ~ Extra Tools: SCSS, jQuery, BootStrap, TailWind, GIT & GitHub,
+          Jira , Figma, Adobe, PhotoShop.
         </span>
         <Link spy={true} to="Contact" smooth={true}>
           <button className="button s-button">Hire Me🥇</button>
@@ -59,11 +58,11 @@ const Works = () => {
             {/* <img src={Amazon} alt="" /> */}
           </div>
           <div className="w-secCircle">
-            <LinkedIn />
+            <CSS3 />
             {/* <img src={Shopify} alt="" /> */}
           </div>
           <div className="w-secCircle">
-            <Twitter />
+            <HTML5 />
             {/* <img src={Facebook} alt="" /> */}
           </div>
         </motion.div>
