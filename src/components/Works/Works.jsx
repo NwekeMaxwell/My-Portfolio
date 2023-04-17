@@ -21,7 +21,7 @@ const Works = () => {
         <span style={{ color: darkMode ? "var(--tertiary-light)" : "" }}>
           About Me
         </span>
-        <span>and my Tools</span>
+        <span>and Tools</span>
 
         <span>
           ~ I am Enthusiastic towards delivering before expected time frame,
