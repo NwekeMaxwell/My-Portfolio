@@ -8,6 +8,7 @@ import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 import Whatsapp from "@iconscout/react-unicons/icons/uil-whatsapp";
+import { motion } from "framer-motion";
 
 const Contacts = () => {
   const theme = useContext(themeContext);
@@ -37,14 +38,24 @@ const Contacts = () => {
   return (
     <div className="contact-form" id="Contact">
       <div className="w-left">
-        <div className="awesome">
+        <motion.div
+          initial={{ transform: "ScaleY(0.8)" }}
+          whileInView={{ transform: "ScaleY(1)" }}
+          transition={{ duration: 3.5, type: "spring" }}
+          className="i-name"
+        >
           <span style={{ color: darkMode ? "var(--tertiary-light)" : "" }}>
             Get in touch{" "}
           </span>
           <span>Contact Me</span>
           <div className="blur s-blur-2"></div>
-        </div>
-        <div className="f-icons">
+        </motion.div>
+        <motion.div
+          initial={{ transform: "Scale(0.7)" }}
+          whileInView={{ transform: "Scale(1)" }}
+          transition={{ duration: 3.5, type: "spring" }}
+          className="f-icons"
+        >
           <a href="https://wa.me/+2348103548367">
             <Whatsapp />
           </a>
@@ -57,7 +68,7 @@ const Contacts = () => {
           <a href="https://linkedin.com/in/nwekemaxwell">
             <LinkedIn />
           </a>
-        </div>
+        </motion.div>
       </div>
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
