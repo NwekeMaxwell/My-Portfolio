@@ -74,8 +74,5 @@ const Projects = () => {
     </div>
   );
 };
-// <div>
-//   <Slider largeimg={Forkify} smallImg={Mapty} />
-// </div>
 
 export default Projects;

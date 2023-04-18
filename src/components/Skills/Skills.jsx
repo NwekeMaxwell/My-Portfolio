@@ -1,16 +1,10 @@
 import React from "react";
 import "./Skills.css";
 import Card from "../Card/Card";
-// import Resume from "../Maxwell's Resume.pdf";
-// import { themeContext } from "../../Context";
-// import { useContext } from "react";
+
 import { motion } from "framer-motion";
 
 const Skills = () => {
-  // const theme = useContext(themeContext);
-  // const darkMode = theme.state.darkMode;
-  // style={{ color: darkMode ? "var(--tertiary-light)" : "" }}
-  // const transition = { duration: 1, type: "spring" };
   return (
     <div className="skills" id="Skills">
       <h1>My Skills</h1>

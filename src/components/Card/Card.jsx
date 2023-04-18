@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Card.css";
-// import { Link } from "react-scroll";
-// import { useContext } from "react";
-// import { themeContext } from "../../Context";
-// const theme = useContext(themeContext);
-// const darkMode = theme.state.darkMode;
 
 const Card = ({ percent, heading }) => {
   const [percentValue, setPercentValue] = useState(0);
@@ -49,13 +44,4 @@ const Card = ({ percent, heading }) => {
   );
 };
 
-// <span
-//   style={{ color: darkMode ? "" : "var(--secondary-dark)" }}
-//   className="detail"
-// >
-//smooth scroll
-// </span>
-// <Link spy={true} to="Projects" smooth={true}>
-//   <button className="c-button">LEARN MORE</button>
-// </Link>
 export default Card;

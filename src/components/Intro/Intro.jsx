@@ -33,10 +33,10 @@ const Intro = () => {
           <span>
             <Typed
               strings={[
-                "You can switch to day/night mode by clicking the toggle button above 🌃☀️",
+                "Toggle day/night mode by clicking the button above 🌃☀️",
               ]}
-              typeSpeed={20}
-              backSpeed={5}
+              typeSpeed={30}
+              backSpeed={10}
               loop
             />
           </span>
