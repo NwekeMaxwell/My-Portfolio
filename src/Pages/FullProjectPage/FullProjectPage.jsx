@@ -2,7 +2,7 @@ import React from "react";
 // import ProjectDetails from "../../components/ProjectDetails/ProjectDetails";
 import "./FullProjectPage.css";
 import MyProjectsData from "../../components/MyProjectsData";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import iArrowBack from "../../img/arrowback.svg";
 import { useState } from "react";
 
@@ -21,11 +21,7 @@ const FullProjectPage = () => {
       <h1 className="heading">MY PROJECTS</h1>
       <div className="projBtns">
         {/* <button>All</button> */}
-        <NavLink activeC>
-          <button activeC onClick={() => setData(MyProjectsData)}>
-            All
-          </button>
-        </NavLink>
+        <button onClick={() => setData(MyProjectsData)}>All</button>
         <button onClick={() => filteredData("React")}>React</button>
         <button onClick={() => filteredData("TypeScript")}>TypeScript</button>
         <button onClick={() => filteredData("JavaScript")}>JavaScript</button>

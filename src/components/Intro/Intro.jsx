@@ -35,8 +35,8 @@ const Intro = () => {
               strings={[
                 "You can switch to day/night mode by clicking the toggle button above 🌃☀️",
               ]}
-              typeSpeed={50}
-              backSpeed={20}
+              typeSpeed={20}
+              backSpeed={5}
               loop
             />
           </span>

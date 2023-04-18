@@ -38,6 +38,117 @@
 .n-button {
   flex: 2;
 }
+
+/* menu button */
+.navigation-checkbox {
+  display: none;
+}
+
+.navigation-button {
+  background-color: transparent;
+  /* background-color: #fff; */
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(#000, 0.1);
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+.navigation-nav {
+  height: 50vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.navigation-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  background-color: var(--secondary-medium);
+}
+
+.navigation-item {
+  margin: 1rem;
+}
+
+.navigation-link:link,
+.navigation-link:visited {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s;
+}
+.navigation-link:hover,
+.navigation-link:active {
+  /* background-position: 100%;
+  color: rgb(109, 194, 109); */
+  transform: translateX(1rem);
+}
+
+/* // functionality */
+.navigation-checkbox:checked ~ .navigation-nav {
+  opacity: 1;
+  width: 100%;
+}
+/* //icon */
+.navigation-icon {
+  position: relative;
+  margin-top: 1rem;
+}
+.navigation-icon,
+.navigation-icon::before,
+.navigation-icon::after {
+  width: 1.5rem;
+  height: 4px;
+  background-color: var(--primary-light);
+  display: inline-block;
+}
+.navigation-icon::before,
+.navigation-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navigation-icon::before {
+  top: -0.3rem;
+}
+.navigation-icon::after {
+  top: 0.3rem;
+}
+.navigation-button:hover .navigation-icon::before {
+  top: -0.5rem;
+}
+.navigation-button:hover .navigation-icon::after {
+  top: 0.5rem;
+}
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent;
+}
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
 @media screen and (max-width: 780px) {
   .n-left {
     gap: 5rem;
@@ -46,6 +157,12 @@
     display: none;
   }
   .n-button {
+    display: none;
+  }
+  .navigation-button {
+    display: block;
+  }
+  .toggleDN {
     display: none;
   }
 }
