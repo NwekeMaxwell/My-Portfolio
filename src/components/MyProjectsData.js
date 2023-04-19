@@ -19,7 +19,7 @@ const MyProjectsData = [
     link: "https://nweke-maxwell-lendsqr-fe-test.netlify.app",
     github: "https://github.com/NwekeMaxwell/lendsqr-fe-test",
     description:
-      "A finance 4 page website accessing and showing over 500 user details from external Library / API.",
+      "A 4-page Admin Panel website accessing and showing over 500 user details from external Library / API.",
     stack: ["TypeScript", "React", "SCSS"],
     projectFocus: ["Typescript", "SCSS", "ReactJS"],
   },
