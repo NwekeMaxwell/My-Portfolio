@@ -38,6 +38,7 @@
   width: 8rem;
   height: 8rem;
   border-radius: 100%;
+  object-fit: contain;
 }
 .testimonials > span {
   color: var(--primary-light);

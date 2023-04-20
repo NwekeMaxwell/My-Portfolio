@@ -74,7 +74,7 @@
 .i-right > :nth-child(3) {
   transform: scale(0.9);
   left: -30%;
-  animation: animateUser 5s linear infinite;
+  /* animation: animateUser 5s linear infinite; */
 }
 .i-avatar {
   background: linear-gradient(var(--basic), transparent);
@@ -83,7 +83,7 @@
   display: grid;
 }
 .i-avatar img {
-  animation: animateUser 4s linear infinite;
+  /* animation: animateUser 4s linear infinite; */
   margin: auto;
 }
 .blur {

@@ -23,7 +23,7 @@ const Navbar = () => {
             <span class="navigation-icon">&nbsp;</span>
           </label>
 
-          <div class="navigation-background">&nbsp;</div>
+          {/* <div class="navigation-background">&nbsp;</div> */}
 
           <nav class="navigation-nav">
             <ul class="navigation-list">

@@ -40,7 +40,7 @@ const Contacts = () => {
       <div className="w-left">
         <motion.div
           initial={{ transform: "ScaleY(0.8)" }}
-          whileInView={{ transform: "ScaleY(1)" }}
+          whileInView={{ transform: "ScaleY(0.95)" }}
           transition={{ duration: 3.5, type: "spring" }}
           className="i-name"
         >
@@ -52,7 +52,7 @@ const Contacts = () => {
         </motion.div>
         <motion.div
           initial={{ transform: "Scale(0.7)" }}
-          whileInView={{ transform: "Scale(1)" }}
+          whileInView={{ transform: "Scale(0.9)" }}
           transition={{ duration: 3.5, type: "spring" }}
           className="f-icons"
         >

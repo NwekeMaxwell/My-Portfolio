@@ -1,6 +1,12 @@
 import React from "react";
 import "./Skills.css";
 import Card from "../Card/Card";
+import html from "../../img/html logo.png";
+import css from "../../img/css logo.png";
+import js from "../../img/JavaScript-logo.png";
+import ts from "../../img/Typescript_logo.png";
+import sass from "../../img/sass logo.png";
+import reac from "../../img/react logo.png";
 
 import { motion } from "framer-motion";
 
@@ -14,14 +20,12 @@ const Skills = () => {
         transition={{ duration: 3.5, type: "spring" }}
         className="s-container"
       >
-        <Card heading={"JavaScript"} percent={95} />
-        <Card heading={"ReactJS"} percent={90} />
-        <Card heading={"TypeScript"} percent={70} />
-        <Card heading={"SCSS"} percent={100} />
-        <Card heading={"Python"} percent={30} />
-        <Card heading={"C"} percent={30} />
-        <Card heading={"Shell"} percent={50} />
-        <Card heading={"MySQL"} percent={40} />
+        <Card heading={"TypeScript"} percent={ts} />
+        <Card heading={"JavaScript"} percent={js} />
+        <Card heading={"REACT"} percent={reac} />
+        <Card heading={"SCSS"} percent={sass} />
+        <Card heading={"CSS"} percent={css} />
+        <Card heading={"HTML"} percent={html} />
       </motion.div>
       <div className="blur s-blur-1"></div>
       <div className="blur s-blur-2"></div>
