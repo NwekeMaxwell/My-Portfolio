@@ -6,7 +6,9 @@ import css from "../../img/css logo.png";
 import js from "../../img/JavaScript-logo.png";
 import ts from "../../img/Typescript_logo.png";
 import sass from "../../img/sass logo.png";
-import reac from "../../img/react logo.png";
+import react from "../../img/react logo.png";
+import NextJS from "../../img/nextJs.png";
+import Tailwind from "../../img/tailwind.png";
 
 import { motion } from "framer-motion";
 
@@ -15,17 +17,19 @@ const Skills = () => {
     <div className="skills" id="Skills">
       <h1>My Skills</h1>
       <motion.div
-        initial={{ transform: "Scale(0.95)" }}
-        whileInView={{ transform: "Scale(1)" }}
+        initial={{ transform: "Scale(0.94)" }}
+        whileInView={{ transform: "Scale(0.97)" }}
         transition={{ duration: 3.5, type: "spring" }}
         className="s-container"
       >
-        <Card heading={"TypeScript"} percent={ts} />
-        <Card heading={"JavaScript"} percent={js} />
-        <Card heading={"REACT"} percent={reac} />
-        <Card heading={"SCSS"} percent={sass} />
-        <Card heading={"CSS"} percent={css} />
-        <Card heading={"HTML"} percent={html} />
+        <Card title={"TypeScript"} image={ts} />
+        <Card title={"JavaScript"} image={js} />
+        <Card title={"REACT"} image={react} />
+        <Card title={"NextJS"} image={NextJS} />
+        <Card title={"SCSS"} image={sass} />
+        <Card title={"TailWind"} image={Tailwind} />
+        <Card title={"CSS"} image={css} />
+        <Card title={"HTML"} image={html} />
       </motion.div>
       <div className="blur s-blur-1"></div>
       <div className="blur s-blur-2"></div>
