@@ -38,7 +38,7 @@ const Projects = () => {
         className="projects-slider"
       >
         <SwiperSlide>
-          <a href="#">
+          <a href="/#">
             <img src={Portfolio} alt="portfolio" />
           </a>
         </SwiperSlide>

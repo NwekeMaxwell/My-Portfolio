@@ -22,7 +22,7 @@ function App() {
         <Route path="/projects" Component={FullProjectPage} />
       </Routes>
       <Footer />
-      <a href="#" className="moveToTop">
+      <a href="/#" className="moveToTop">
         &uarr;
       </a>
     </div>

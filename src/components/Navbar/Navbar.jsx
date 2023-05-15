@@ -29,7 +29,7 @@ const Navbar = () => {
         <div>
           <nav className={`navigation-nav ${active ? "show" : ""}`}>
             <ul className="navigation-list">
-              <a onClick={handleChange} href="#">
+              <a onClick={handleChange} href="/#">
                 <li className="navigation-item">Home</li>
               </a>
               <Link
