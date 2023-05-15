@@ -10,8 +10,85 @@ import PigGame from "../img/pigGame.png";
 import Lendsqr from "../img/lendsqr.png";
 import Kitty from "../img/Rolodex.png";
 import GuessMyAge from "../img/guessmyage.png";
+import Dashboard from "../img/React Dashboard.png";
+import Colab from "../img/colab.png";
+//skill imports
+import html from "../img/html logo.png";
+import css from "../img/css logo.png";
+import js from "../img/JavaScript-logo.png";
+import ts from "../img/Typescript_logo.png";
+import sass from "../img/sass logo.png";
+import react from "../img/react logo.png";
+import tailwind from "../img/tailwind.png";
+import nextjs from "../img/nextJs.png";
 
+//skilldata
+export const SkillData = [
+  {
+    id: 1,
+    title: "TypeScript",
+    image: ts,
+  },
+  {
+    id: 2,
+    title: "JavaScript",
+    image: js,
+  },
+  {
+    id: 3,
+    title: "NextJS",
+    image: nextjs,
+  },
+  {
+    id: 4,
+    title: "REACT",
+    image: react,
+  },
+  {
+    id: 5,
+    title: "SCSS",
+    image: sass,
+  },
+  {
+    id: 6,
+    title: "TailWind",
+    image: tailwind,
+  },
+  {
+    id: 7,
+    title: "CSS",
+    image: css,
+  },
+  {
+    id: 8,
+    title: "HTML",
+    image: html,
+  },
+];
+//projects data
 const MyProjectsData = [
+  {
+    id: 13,
+    title: "Buy Dashboard",
+    image: Dashboard,
+    link: "https://adminpanel-max.netlify.app/",
+    github: "https://github.com/NwekeMaxwell/Simple-Admin-Panel",
+    description:
+      "Simple model shopping admin dashboard with chart representation",
+    stack: ["JavaScript", "React"],
+    projectFocus: ["Charts, Admin Panel UI"],
+  },
+  {
+    id: 14,
+    title: "Colab",
+    image: Colab,
+    link: "https://colab-nwekemaxwell.netlify.app/",
+    github: "https://github.com/NwekeMaxwell/Co.lab-Portfolio-Assessment",
+    description:
+      "My Colab portfolio featuring 3 pages website with my briefing, few projects and a consumed API data",
+    stack: ["JavaScript", "React"],
+    projectFocus: ["API handling, Responsiveness"],
+  },
   {
     id: 1,
     title: "Lendsqr",
