@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import Menu from "../../img/menu.svg";
+import Cross from "../../img/cross.svg";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+  const handleChange = () => setActive(!active);
+
+  console.log(active);
   return (
     <div className="n-wrapper" id="NavBar">
       <div className="n-left">
@@ -11,38 +17,59 @@ const Navbar = () => {
         <div className="toggleDN">
           <Toggle />
         </div>
-        {/* phone size nav */}
-        <div class="navigation">
-          <input
-            type="checkbox"
-            class="navigation-checkbox"
-            id="navigation-toggle"
+        {/* mobile nav */}
+        <div>
+          <img
+            src={active ? Cross : Menu}
+            onClick={handleChange}
+            alt=""
+            className="nav-icon"
           />
-
-          <label for="navigation-toggle" class="navigation-button">
-            <span class="navigation-icon">&nbsp;</span>
-          </label>
-
-          {/* <div class="navigation-background">&nbsp;</div> */}
-
-          <nav class="navigation-nav">
-            <ul class="navigation-list">
-              <Link spy={true} to="Navbar" smooth={true}>
+        </div>
+        <div>
+          <nav className={`navigation-nav ${active ? "show" : ""}`}>
+            <ul className="navigation-list">
+              <a onClick={handleChange} href="#">
                 <li className="navigation-item">Home</li>
-              </Link>
-              <Link spy={true} to="Skills" smooth={true}>
+              </a>
+              <Link
+                onClick={handleChange}
+                offset={-50}
+                to="Skills"
+                smooth={true}
+              >
                 <li className="navigation-item">Skills</li>
               </Link>
-              <Link spy={true} to="Experience" smooth={true}>
+              <Link
+                onClick={handleChange}
+                offset={-50}
+                to="Experience"
+                smooth={true}
+              >
                 <li className="navigation-item">Experience</li>
               </Link>
-              <Link spy={true} to="Projects" smooth={true}>
+              <Link
+                onClick={handleChange}
+                offset={-50}
+                to="Projects"
+                smooth={true}
+              >
                 <li className="navigation-item">Projects</li>
               </Link>
-              <Link spy={true} to="Testimonials" smooth={true}>
+              <Link
+                onClick={handleChange}
+                offset={-50}
+                to="Testimonials"
+                smooth={true}
+              >
                 <li className="navigation-item">Testimonials</li>
               </Link>
-              <Link spy={true} to="Contact" smooth={true}>
+              <Link
+                onClick={handleChange}
+                offset={-50}
+                to="Contact"
+                smooth={true}
+              >
                 <li className="navigation-item">Contact Me</li>
               </Link>
               <Toggle />
