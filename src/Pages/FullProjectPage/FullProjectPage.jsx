@@ -46,7 +46,7 @@ const FullProjectPage = () => {
           }) => (
             <div key={id} className="projectDetails">
               <div className="imgContainer">
-                <img src={image} alt="project image" />
+                <img src={image} alt="" />
               </div>
               <div className="descriptionContainer">
                 <h2> {title} </h2>
