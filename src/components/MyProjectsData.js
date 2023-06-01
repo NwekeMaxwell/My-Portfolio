@@ -12,6 +12,8 @@ import Kitty from "../img/Rolodex.png";
 import GuessMyAge from "../img/guessmyage.png";
 import Dashboard from "../img/React Dashboard.png";
 import Colab from "../img/colab.png";
+import Acad from "../img/AcademiaDashboard.png";
+import Devxp from "../img/devxp.png";
 //skill imports
 import html from "../img/html logo.png";
 import css from "../img/css logo.png";
@@ -68,28 +70,6 @@ export const SkillData = [
 //projects data
 const MyProjectsData = [
   {
-    id: 13,
-    title: "Buy Dashboard",
-    image: Dashboard,
-    link: "https://adminpanel-max.netlify.app/",
-    github: "https://github.com/NwekeMaxwell/Simple-Admin-Panel",
-    description:
-      "Simple model shopping admin dashboard with chart representation",
-    stack: ["JavaScript", "React"],
-    projectFocus: ["Charts, Admin Panel UI"],
-  },
-  {
-    id: 14,
-    title: "Colab",
-    image: Colab,
-    link: "https://colab-nwekemaxwell.netlify.app/",
-    github: "https://github.com/NwekeMaxwell/Co.lab-Portfolio-Assessment",
-    description:
-      "My Colab portfolio featuring 3 pages website with my briefing, few projects and a consumed API data",
-    stack: ["JavaScript", "React"],
-    projectFocus: ["API handling, Responsiveness"],
-  },
-  {
     id: 1,
     title: "Lendsqr",
     image: Lendsqr,
@@ -102,16 +82,6 @@ const MyProjectsData = [
   },
   {
     id: 2,
-    title: "Portfolio",
-    image: Portfolio,
-    link: "#",
-    github: "https://github.com/NwekeMaxwell/My-Portfolio",
-    description: "My Portfolio Website :) You are currently viewing 🤗",
-    stack: ["React", "JavaScript"],
-    projectFocus: ["Hooks", "Framer Motion", "Email JS"],
-  },
-  {
-    id: 3,
     title: "Forkify",
     image: Forkify,
     link: "https://forkify2023.netlify.app",
@@ -130,7 +100,63 @@ const MyProjectsData = [
     ],
   },
   {
+    id: 3,
+    title: "DevXP",
+    image: Devxp,
+    link: "https://devxp-react-projects.vercel.app/",
+    github:
+      "https://github.com/NwekeMaxwell/devxp_react_projects/tree/main/ch5",
+    description: "DevXP cohort5 project- Convert figma design to code",
+    stack: ["TypeScript", "SCSS", "React"],
+    projectFocus: [
+      "Teamwork, Material UI, ChartJS, Styled Components, Responsiveness",
+    ],
+  },
+  {
     id: 4,
+    title: "Buy Dashboard",
+    image: Dashboard,
+    link: "https://adminpanel-max.netlify.app/",
+    github: "https://github.com/NwekeMaxwell/Simple-Admin-Panel",
+    description:
+      "Simple model shopping admin dashboard with chart representation",
+    stack: ["JavaScript", "React"],
+    projectFocus: ["Charts, Admin Panel UI"],
+  },
+  {
+    id: 5,
+    title: "Colab",
+    image: Colab,
+    link: "https://colab-nwekemaxwell.netlify.app/",
+    github: "https://github.com/NwekeMaxwell/Co.lab-Portfolio-Assessment",
+    description:
+      "My Colab portfolio featuring 3 pages website with my briefing, few projects and a consumed API data",
+    stack: ["JavaScript", "React"],
+    projectFocus: ["API handling, Responsiveness"],
+  },
+  {
+    id: 6,
+    title: "Portfolio",
+    image: Portfolio,
+    link: "#",
+    github: "https://github.com/NwekeMaxwell/My-Portfolio",
+    description: "My Portfolio Website :) You are currently viewing 🤗",
+    stack: ["React", "JavaScript"],
+    projectFocus: ["Hooks", "Framer Motion", "Email JS"],
+  },
+  {
+    id: 7,
+    title: "Academia Dashboard",
+    image: Acad,
+    link: "https://academia-dashboard.vercel.app/",
+    github: "https://github.com/NwekeMaxwell/Academia-Dashboard",
+    description:
+      "A simple 3 pages academic dashboard built with NextJS and TailwindCSS, effected simple search functionality",
+    stack: ["NextJS", "Tailwind", "React"],
+    projectFocus: ["NextJS, TailwindCSS, Responsiveness"],
+  },
+  {
+    id: 8,
     title: "PIG GAME",
     image: PigGame,
     link: "https://piggame100.netlify.app",
@@ -141,7 +167,7 @@ const MyProjectsData = [
     projectFocus: ["DOM Manipulation"],
   },
   {
-    id: 5,
+    id: 9,
     title: "Bankist App",
     image: Bankist,
     link: "https://bankist2022.netlify.app",
@@ -157,7 +183,7 @@ const MyProjectsData = [
     ],
   },
   {
-    id: 6,
+    id: 10,
     title: "Mini-Bankist App",
     image: MiniBankist,
     link: "https://mini-bankist2022.netlify.app",
@@ -172,7 +198,7 @@ const MyProjectsData = [
     ],
   },
   {
-    id: 7,
+    id: 11,
     title: "Mapty",
     image: Mapty,
     link: "https://mapty2022.netlify.app",
@@ -189,7 +215,7 @@ const MyProjectsData = [
     ],
   },
   {
-    id: 8,
+    id: 12,
     title: "MaxArt",
     image: MaxArt,
     link: "https://maxart.netlify.app",
@@ -199,7 +225,7 @@ const MyProjectsData = [
     projectFocus: ["SCSS", "CSS GRID", "Responsive WebPage"],
   },
   {
-    id: 9,
+    id: 13,
     title: "Chef Max",
     image: ChefMax,
     link: "https://chefmax.netlify.app",
@@ -209,7 +235,7 @@ const MyProjectsData = [
     projectFocus: ["FlexBox", "SCSS", "Responsive WebPage"],
   },
   {
-    id: 10,
+    id: 14,
     title: "Church App",
     image: Church,
     link: "https://heavenschurch.netlify.app",
@@ -220,7 +246,7 @@ const MyProjectsData = [
     projectFocus: ["CSS Animations", "Responsive Web Page"],
   },
   {
-    id: 11,
+    id: 15,
     title: "Kitty Rolodex",
     image: Kitty,
     link: "https://kittyrolodex.netlify.app",
@@ -235,7 +261,7 @@ const MyProjectsData = [
     ],
   },
   {
-    id: 12,
+    id: 16,
     title: "Guess My Age",
     image: GuessMyAge,
     link: "https://guessmyage2022.netlify.app",
