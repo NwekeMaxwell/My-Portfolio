@@ -10,18 +10,11 @@ import react from "../../img/react logo.png";
 import NextJS from "../../img/nextJs.png";
 import Tailwind from "../../img/tailwind.png";
 
-import { motion } from "framer-motion";
-
 const Skills = () => {
   return (
     <div className="skills" id="Skills">
       <h1>My Skills</h1>
-      <motion.div
-        initial={{ transform: "Scale(0.94)" }}
-        whileInView={{ transform: "Scale(0.97)" }}
-        transition={{ duration: 3.5, type: "spring" }}
-        className="s-container"
-      >
+      <div className="s-container">
         <Card title={"TypeScript"} image={ts} />
         <Card title={"JavaScript"} image={js} />
         <Card title={"REACT"} image={react} />
@@ -30,7 +23,7 @@ const Skills = () => {
         <Card title={"TailWind"} image={Tailwind} />
         <Card title={"CSS"} image={css} />
         <Card title={"HTML"} image={html} />
-      </motion.div>
+      </div>
       <div className="blur s-blur-1"></div>
       <div className="blur s-blur-2"></div>
     </div>
