@@ -38,7 +38,6 @@
 .n-button {
   flex: 2;
 }
-
 .nav-icon {
   height: 2rem;
   width: 2rem;
@@ -48,33 +47,28 @@
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 1500;
-}
-.navigation-nav {
-  height: 50vh;
-  width: 0;
-  position: fixed;
-  top: 7%;
-  left: 0;
-  z-index: 1500;
-  opacity: 0;
-  transition: all 0.8s;
-}
-.show {
-  width: 100%;
-  opacity: 1;
+  z-index: 1000;
 }
 .navigation-list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center;
-  width: 100%;
-  background-color: var(--secondary-medium);
+  display: none;
+  position: fixed;
+  inset: 0 0 0 100%;
+  padding: min(30vh, 10rem) 1.5em;
+  z-index: 1000;
+  height: 100vh;
+  margin-top: 0vh;
+  background: hsla(225, 50%, 30%, 0.9);
 }
-
+@supports (backdrop-filter: blur(1rem)) {
+  .navigation-list {
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+}
+.show {
+  inset: 0 0 0 30% !important;
+}
 .navigation-item {
   margin: 1rem;
 }
@@ -92,13 +86,13 @@ a {
   .n-button {
     display: none;
   }
-  /* .navigation-button {
-    display: block;
-  } */
   .toggleDN {
     display: none;
   }
   .nav-icon {
+    display: block;
+  }
+  .navigation-list {
     display: block;
   }
 }

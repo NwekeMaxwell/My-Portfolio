@@ -1,15 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import Menu from "../../img/menu.svg";
 import Cross from "../../img/cross.svg";
 
+const useClickOutside = (handlerFunction) => {
+  let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        handlerFunction();
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
+
+  return menuRef;
+};
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const handleChange = () => setActive(!active);
-
-  console.log(active);
+  const menuRef = useClickOutside(() => {
+    setActive(false);
+  });
   return (
     <div className="n-wrapper" id="NavBar">
       <div className="n-left">
@@ -19,16 +38,20 @@ const Navbar = () => {
         </div>
         {/* mobile nav */}
         <div>
-          <img
-            src={active ? Cross : Menu}
-            onClick={handleChange}
-            alt=""
-            className="nav-icon"
-          />
+          <img src={Menu} onClick={handleChange} alt="" className="nav-icon" />
         </div>
         <div>
-          <nav className={`navigation-nav ${active ? "show" : ""}`}>
-            <ul className="navigation-list">
+          <nav>
+            <ul
+              ref={menuRef}
+              className={`navigation-list ${active ? "show" : ""}`}
+            >
+              <img
+                src={Cross}
+                onClick={handleChange}
+                alt=""
+                className="nav-icon"
+              />
               <a onClick={handleChange} href="/#">
                 <li className="navigation-item">Home</li>
               </a>
