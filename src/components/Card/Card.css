@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  width: 150px;
+  width: 100px;
   padding: 20px;
   border-radius: 8px;
   background: #fff;
@@ -16,14 +16,14 @@
 }
 .title {
   color: var(--secondary-dark);
-  font-size: 30px;
+  font-size: 20px;
 }
 @media only screen and (max-width: 780px) {
   .card {
-    width: 25vw;
+    width: 20vw;
     padding: 2px;
   }
   .title {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }

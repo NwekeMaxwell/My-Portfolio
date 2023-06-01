@@ -120,11 +120,11 @@ const Navbar = () => {
             <Link spy={true} to="Testimonials" smooth={true}>
               <li className="nav">Testimonials</li>
             </Link>
+            <Link spy={true} to="Contact" smooth={true}>
+              <li className="nav">Contact</li>
+            </Link>
           </ul>
         </div>
-        <Link spy={true} to="Contact" smooth={true}>
-          <button className="button n-button">Contact</button>
-        </Link>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, min-content);
   gap: 5vw;
+  justify-content: center;
 }
 .s-button {
   width: 8rem;
@@ -35,6 +36,11 @@ h1 {
   width: 21rem;
   top: 10rem;
   left: -7rem;
+}
+@media screen and (max-width: 900px) {
+  .s-container {
+    gap: 2vw;
+  }
 }
 @media screen and (max-width: 780px) {
   .skills {
