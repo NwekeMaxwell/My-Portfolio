@@ -30,6 +30,9 @@
   margin-top: 1px;
 }
 /* buttons */
+.mobileSelect {
+  display: none;
+}
 .projBtns {
   display: flex;
   gap: 1rem;
@@ -137,8 +140,11 @@
     margin-bottom: 2rem;
   }
   .projBtns {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     gap: 2px;
+  }
+  .mobileSelect {
+    display: block;
   }
 }

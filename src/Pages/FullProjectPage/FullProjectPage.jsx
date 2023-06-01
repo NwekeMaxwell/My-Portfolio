@@ -5,6 +5,7 @@ import MyProjectsData from "../../components/MyProjectsData";
 import { Link } from "react-router-dom";
 import iArrowBack from "../../img/arrowback.svg";
 import { useState } from "react";
+import Select from "react-select";
 
 const FullProjectPage = () => {
   const [data, setData] = useState(MyProjectsData);
@@ -12,6 +13,22 @@ const FullProjectPage = () => {
     const result = MyProjectsData.filter((item) => item.stack.includes(cat));
     setData(result);
   };
+
+  //mobile select
+  const options = [
+    { value: "ALL", label: "ALL" },
+    { value: "TypeScript", label: "TypeScript" },
+    { value: "JavaScript", label: "JavaScript" },
+    { value: "React", label: "React" },
+    { value: "SCSS", label: "SCSS" },
+    { value: "NextJS", label: "NextJS" },
+    { value: "Tailwind", label: "Tailwind" },
+    { value: "HTML/CSS", label: "HTML/CSS" },
+  ];
+  const handleChange = (e) => {
+    e.value === "ALL" ? setData(MyProjectsData) : filteredData(e.value);
+  };
+
   return (
     <div className="fullProjectPage">
       <Link to="/" className="button prevBtn">
@@ -27,6 +44,29 @@ const FullProjectPage = () => {
         <button onClick={() => filteredData("JavaScript")}>JavaScript</button>
         <button onClick={() => filteredData("SCSS")}>SCSS</button>
         <button onClick={() => filteredData("HTML/CSS")}>HTML/CSS</button>
+        <button onClick={() => filteredData("NextJS")}>NextJS</button>
+        <button onClick={() => filteredData("Tailwind")}>Tailwind</button>
+      </div>
+      {/* mobile select */}
+      <div className="mobileSelect">
+        <Select
+          isSearchable
+          noOptionsMessage={() => "Category not found"}
+          options={options}
+          placeholder="Select Category"
+          // isMulti
+          onChange={handleChange}
+          styles={{
+            menuList: (baseStyles, state) => ({
+              ...baseStyles,
+              color: "#242d49",
+            }),
+            dropdownIndicator: (baseStyles, state) => ({
+              ...baseStyles,
+              color: "#242d49",
+            }),
+          }}
+        />
       </div>
       <p>
         Showing {data.length} / {data.length} Projects

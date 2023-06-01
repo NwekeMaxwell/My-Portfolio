@@ -1,11 +1,13 @@
 import React from "react";
 import "./Projects.css";
-import Portfolio from "../../img/portfolio.png";
+import lendsqr from "../../img/lendsqr.png";
 import Bankist from "../../img/bankist.png";
 import Forkify from "../../img/forkify.png";
 import Mapty from "../../img/mapty.png";
+import Dashboard from "../../img/React Dashboard.png";
 import MiniBankist from "../../img/miniBankist.png";
 import PigGame from "../../img/pigGame.png";
+import Devxp from "../../img/devxp2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper";
 import "swiper/css";
@@ -38,13 +40,18 @@ const Projects = () => {
         className="projects-slider"
       >
         <SwiperSlide>
-          <a href="/#">
-            <img src={Portfolio} alt="portfolio" />
+          <a href="https://nweke-maxwell-lendsqr-fe-test.netlify.app">
+            <img src={lendsqr} alt="lendsqr" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href="https://forkify2023.netlify.app">
             <img src={Forkify} alt="forkify" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://devxp-react-projects.vercel.app/">
+            <img src={Devxp} alt="Devxp" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -55,6 +62,11 @@ const Projects = () => {
         <SwiperSlide>
           <a href="https://bankist2022.netlify.app">
             <img src={Bankist} alt="bankist" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://adminpanel-max.netlify.app/">
+            <img src={Dashboard} alt="Dashboard" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
@@ -69,7 +81,7 @@ const Projects = () => {
         </SwiperSlide>
       </Swiper>
       <div className="viewAllBtn">
-        <Link to="/projects">View All Projects &rarr;</Link>
+        <Link to="/projects">View All Projects + Description &rarr;</Link>
       </div>
     </div>
   );
