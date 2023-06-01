@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { themeContext } from "./Context";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import FullProjectPage from "./Pages/FullProjectPage/FullProjectPage";
 import HomePage from "./Pages/HomePage.jsx";
@@ -9,6 +9,15 @@ import "./App.css";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  //scroll to top config
+  const ScrollToTop = (props) => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+    return <>{props.children}</>;
+  };
+
   return (
     <div
       className="App"
@@ -17,12 +26,14 @@ function App() {
         color: darkMode ? "var(--tertiary-light)" : "",
       }}
     >
-      <Routes>
-        <Route path="/" Component={HomePage} />
-        <Route path="/projects" Component={FullProjectPage} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" Component={HomePage} />
+          <Route path="/projects" Component={FullProjectPage} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
-      <a href="/#" className="moveToTop">
+      <a href="#top" className="moveToTop">
         &uarr;
       </a>
     </div>
